@@ -1,0 +1,7 @@
+avrdude -c usbasp -p m328pb -U flash:w:app.hex
+
+
+avrdude -c usbasp -p m328pb -U fuse:r:
+
+
+avrdude -c usbasp -p m328pb -U lfuse:w:0xFF:m -U hfuse:w:0xD7:m -U efuse:w:0xF5:m
